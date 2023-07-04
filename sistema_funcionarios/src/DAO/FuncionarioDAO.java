@@ -82,17 +82,15 @@ public class FuncionarioDAO {
 	
 	public void DeletarFuncionario(Funcionario func) {
 		Connection conexao = null;
-		PreparedStatement statementDel = null;
+		PreparedStatement statement = null;
 		try {
 		
 			conexao = new Conexao().ConexaoBD();
 			
-			String sql = "delete from funcionarios where id_funcionario = ?";
-		
-  			statementDel = conexao.prepareStatement(sql);
-			statementDel.setInt(1, func.getId());
+			String sql = "delete from funcionarios where id_funcionario = " + func.getId();
+  			statement = conexao.prepareStatement(sql);
 			
-			statementDel.executeUpdate(sql);
+			statement.executeUpdate(sql);
 		} catch(SQLException erro) {
 			JOptionPane.showMessageDialog(null,"Classe FuncionarioDAO, metodo excluir: " + erro);
 		}

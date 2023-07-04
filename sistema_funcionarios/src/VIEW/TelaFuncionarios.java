@@ -25,6 +25,7 @@ import java.sql.SQLException;
 
 import DAO.ModelFuncionarios;
 import DTO.Funcionario;
+import javax.swing.ImageIcon;
 public class TelaFuncionarios extends JFrame {
 	private JPanel contentPane;
 	private JTextField txtNome;
@@ -85,14 +86,7 @@ public class TelaFuncionarios extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 624, 477);
 		contentPane = new JPanel();
-		contentPane.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mousePressed(MouseEvent e) {
-				limparCampos();
-			}
-		});
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
@@ -220,15 +214,14 @@ public class TelaFuncionarios extends JFrame {
 		scrollPane.setViewportView(table);
 		table.setModel(model);
 		
-		JButton btnMenu = new JButton("Menu");
-		btnMenu.addActionListener(new ActionListener() {
+		JButton btnNewButton_3 = new JButton("");
+		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				TelaMenu menu = new TelaMenu();
-				dispose();
-				menu.setVisible(true);
+				limparCampos();
 			}
 		});
-		btnMenu.setBounds(500, 14, 76, 23);
-		contentPane.add(btnMenu);
+		btnNewButton_3.setIcon(new ImageIcon("C:\\GitHub\\Cadastrar-Funcionarios\\sistema_funcionarios\\icon20_20.png"));
+		btnNewButton_3.setBounds(264, 163, 25, 25);
+		contentPane.add(btnNewButton_3);
 	}
 }
