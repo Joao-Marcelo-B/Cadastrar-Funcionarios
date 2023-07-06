@@ -4,7 +4,7 @@ Esse projeto foi desenvolvido com intuíto de concretização dos estudos sobre 
 
 O sistema é bem simples, ele possúi uma tela de **Login** para o usuário que irá fazer os cadastros, e assim que o usuário entrar no sistema será apresentado uma outra tela para o cadastramento dos novos funcionários, o sistema consegue fazer um CRUD, logo o usuário além do cadastro ele também pode visualizar os funcinários cadastrados, alterar dados e remover funcionários.
 
-> ✅ O projeto se encontra como concluido pois nele consegui utilizar todos os recursos aprendido nos meus estudos e consegui concretiza-los com sucesso.
+> ✅ O projeto se encontra como concluido pois nele consegui utilizar todos os recursos que aprendi nos meus estudos e concretiza-los com sucesso.
 
 https://github.com/Joao-Marcelo-B/Cadastrar-Funcionarios/assets/113398296/48542c1c-37f3-4ed4-a576-872a2e07352e
 
